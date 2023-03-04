@@ -292,17 +292,18 @@ cp -rf ../OpenWrt-Add/trojan-plus ./package/new/trojan-plus
 cp -rf ../passwall_pkg/xray-plugin ./package/new/xray-plugin
 # Passwall 白名单
 echo '
-teamviewer.com
-epicgames.com
-dangdang.com
-account.synology.com
-ddns.synology.com
 checkip.synology.com
-checkip.dyndns.org
 checkipv6.synology.com
-ntp.aliyun.com
-cn.ntp.org.cn
-ntp.ntsc.ac.cn
+checkport.synology.com
+ddns.synology.com
+account.synology.com
+whatismyip.akamai.com
+checkip.dyndns.org
+teamviewer.com
+bing.com
+api.ipify.org
+epicgames.com
+emby.kyarucloud.moe
 ' >>./package/new/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 # qBittorrent 下载
 cp -rf ../lede_luci/applications/luci-app-qbittorrent ./package/new/luci-app-qbittorrent
