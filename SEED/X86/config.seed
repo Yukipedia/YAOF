@@ -12,6 +12,15 @@ CONFIG_DEVEL=y
 CONFIG_KERNEL_BUILD_DOMAIN="buildhost"
 CONFIG_KERNEL_BUILD_USER="builder"
 
+# DAE
+CONFIG_KERNEL_DEBUG_INFO=y
+CONFIG_KERNEL_DEBUG_INFO_REDUCED=n
+CONFIG_KERNEL_DEBUG_INFO_BTF=y
+CONFIG_KERNEL_CGROUPS=y
+CONFIG_KERNEL_BPF_EVENTS=y
+CONFIG_BPF_TOOLCHAIN_HOST=y
+CONFIG_PACKAGE_dae=y
+
 ### AGGRESSIVE ###
 CONFIG_PACKAGE_node=y
 CONFIG_NODEJS_16=y
@@ -37,6 +46,7 @@ CONFIG_PACKAGE_kmod-igb-intel=y
 CONFIG_PACKAGE_kmod-mlx4-core=y
 CONFIG_PACKAGE_i915-firmware=y
 CONFIG_PACKAGE_kmod-drm-i915=y
+CONFIG_PACKAGE_kmod-i915-gvt=y
 
 ### DDNS ###
 CONFIG_PACKAGE_luci-app-ddns=y
@@ -80,6 +90,7 @@ CONFIG_PACKAGE_luci-app-socat=y
 CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-arpbind=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-airconnect=y
 CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_luci-app-cpufreq=y
 CONFIG_PACKAGE_luci-app-cpulimit=y
